@@ -25,7 +25,7 @@ while getopts "d:e:s:x:v?" c; do
     s)	signal=$OPTARG;;
     x)	status=$OPTARG;;
     v)	verbose=1;;
-    \?)	echo "skeleton version: $version:-unknown" >&2
+    \?)	echo "skeleton version: ${version:-unknown}" >&2
 	echo $usage >&2
 	exit 2;;
     esac
